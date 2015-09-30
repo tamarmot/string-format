@@ -1,19 +1,19 @@
 {
   "name": "string-format",
-  "version": "0.2.1",
-  "description": "Adds a `format` method to `String.prototype`. Inspired by Python's `str.format()`.",
-  "author": "David Chambers <dc@hashify.me>",
+  "version": "0.2.2",
+  "description": "Adds a `format` method to `String.prototype`. Inspired by Python's `str.format()`.  Fork of David Chambers' code.",
+  "author": "Tamar Cohen <tamarmot@gmail.com>",
   "keywords": ["string", "formatting", "language", "util"],
   "main": "./lib/string-format",
-  "homepage": "https://github.com/davidchambers/string-format",
-  "bugs": "https://github.com/davidchambers/string-format/issues",
+  "homepage": "https://github.com/tamarmot/string-format",
+  "bugs": "https://github.com/tamarmot/string-format/issues",
   "licenses": [{
     "type": "WTFPL",
-    "url": "https://raw.github.com/davidchambers/string-format/master/LICENSE"
+    "url": "https://raw.github.com/tamarmot/string-format/master/LICENSE"
   }],
   "repository": {
     "type": "git",
-    "url": "git://github.com/davidchambers/string-format.git"
+    "url": "git://github.com/tamarmot/string-format.git"
   },
   "devDependencies": {
     "coffee-script": "1.4.x",
