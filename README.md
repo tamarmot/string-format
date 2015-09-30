@@ -15,6 +15,9 @@ similar to the _conversions_ in python's str.format()
 It did not implement **printf()**-style number formatting, so here I'm attempting to do that.
 At the moment, only signs, integer precision, and field padding are implemented.
 
+## About this Fork of Ted's Fork
+This fork correctly formats the strings, so if you have something like myNumber:03d the myNumber will be formatted to match 03d.
+
 ## Usage
 
 ### string.format(value1, value2, ..., valueN)

@@ -18,7 +18,7 @@ format = String::format = (args...) ->
   message = 'cannot switch from {} to {} numbering'.format()
 
   @replace \
-  /([{}])\1|[{](.*?)(?:!([^:]+?)?)?(?::(.+?))?[}]/g,
+  /([{}])\1|[{](.*?)(:.+?)?(?:!(.+?))?[}]/g,
   (match, literal, key, transformer, formatSpec) ->
     return literal if literal
 
@@ -35,6 +35,7 @@ format = String::format = (args...) ->
       value = applyFormat value,  formatSpec
     else
       value = "#{value}"
+    if transformer and transformer.length is not 0 then transformer = transformer[1 .. transformer.length-1]
     if fn = format.transformers[transformer] then fn.call(value) ? ''
     else value
 
